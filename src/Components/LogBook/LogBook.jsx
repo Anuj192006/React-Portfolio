@@ -20,7 +20,8 @@ const logData = [
   { date: "May 16", task: "Seive of Erastosthenes Revised" },
   { date: "May 17", task: "Portfolio Website" },
   { date: "May 18", task: "N/A" },
-  { date: "May 19", task: "Worked on Portfolio website" }
+  { date: "May 19", task: "Worked on Portfolio website and did question of the day on leetcode" },
+  { date: "May 20", task: "Completed Portfolio and pushed on Github and did question of the day on leetcode"}
 ];
 let a= logData.length;
 
