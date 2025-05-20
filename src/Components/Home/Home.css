@@ -1,0 +1,363 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f2ef;
+  margin: 0;
+  padding: 0;
+}
+
+.top-fixed {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+
+.top-fixed::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.content-container {
+  margin-top: 260px;
+}
+
+.home {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.pfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.tick {
+  width: 20px;
+  height: 20px;
+}
+
+p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+}
+
+.name-hover-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+.linkedin-post {
+  width: 550px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+}
+
+.post-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.post-pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.dot {
+  margin: 0 6px;
+}
+
+.post-body {
+  margin: 12px 0;
+}
+
+.post-caption {
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.post-footer {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.stats {
+  margin-bottom: 10px;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-buttons button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #444;
+}
+
+.post-buttons button:hover {
+  text-decoration: underline;
+}
+
+.impressions {
+  font-size: 12px;
+  color: #888;
+}
+
+.impressions a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.impressions a:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  margin: 0;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logbook-link {
+  font-size: 14px;
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logbook-link:hover {
+  text-decoration: underline;
+}
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .top-fixed {
+    padding: 15px;
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .content-container {
+    margin-top: 340px;
+    padding: 0 10px;
+  }
+
+  .home {
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .pfp {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .tick {
+    width: 18px;
+    height: 18px;
+  }
+
+  .post-caption,
+  .post-subtitle,
+  .post-time {
+    font-size: 14px;
+  }
+
+  .linkedin-post {
+    width: 90%;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .post-image,
+  video.post-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .profile-text {
+    gap: 3px;
+  }
+
+  .post-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .post-buttons button {
+    text-align: left;
+  }
+
+  .logbook-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .pfp {
+    width: 70px;
+    height: 70px;
+  }
+
+  .top-fixed {
+    padding: 10px;
+  }
+
+  .linkedin-post {
+    padding: 10px;
+  }
+
+  .post-caption {
+    font-size: 13px;
+  }
+
+  .post-subtitle,
+  .post-time {
+    font-size: 12px;
+  }
+
+  .post-buttons button {
+    font-size: 13px;
+  }
+
+  .impressions {
+    font-size: 11px;
+  }
+}
+.contact-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-label {
+  color: #0a66c2;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contact {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+  min-width: 150px;
+  flex-direction: column;
+}
+
+.contact a {
+  display: block;
+  margin-bottom: 8px;
+  color: #0a66c2;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Show card when hovering either the label or the card */
+.contact-wrapper:hover .contact {
+  display: flex;
+}
