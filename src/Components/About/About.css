@@ -11,7 +11,7 @@
   .background-image {
     position: relative;
     height: 160px;
-    background-image: url('bgm.png');
+    background-image: url('/bgm.png');
     background-size: cover;
     background-position: center;
   }
